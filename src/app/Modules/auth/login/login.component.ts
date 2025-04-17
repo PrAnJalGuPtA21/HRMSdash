@@ -15,8 +15,8 @@ export class LoginComponent {
     this.router.navigate(['./auth/register']);
   }
   loginform = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required])
+    email: new FormControl(''),
+    password: new FormControl('')
   })
 
   onLogin() {
