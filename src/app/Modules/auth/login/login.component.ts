@@ -20,11 +20,6 @@ export class LoginComponent {
   })
 
   onLogin() {
-    if (this.loginform.valid) {
       this.router.navigate(['/dash/home'])
-    }
-    else {
-      alert('Credentials gone wrong')
-    }
   }
 }
